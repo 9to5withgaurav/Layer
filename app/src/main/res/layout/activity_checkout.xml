@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DetailsActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Cart"
+            app:titleTextColor="@color/black"
+            app:menu="@menu/top_bar"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cod"
+            android:layout_below="@id/topAppBar"
+            android:fontFamily="@font/lemon_regular"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/skin_placeholder"
+            android:layout_margin="8dp"
+            />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/productImg"
+            android:fontFamily="@font/lemon_regular"
+            android:hint="@string/name_hint"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/price_hint"
+            android:fontFamily="@font/lemon_regular"
+            android:textSize="20sp"
+            android:layout_below="@id/productName"
+            android:layout_toEndOf="@id/productImg"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            />
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/deliveryContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/productPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/deliveryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Fee:"
+                android:fontFamily="@font/lemon_regular"
+                android:textSize="24sp"
+                android:layout_margin="10sp"
+                />
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Free"
+                android:fontFamily="@font/lemon_regular"
+                android:textSize="24sp"
+                android:layout_margin="10sp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/totalAmtContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/deliveryContainer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/totalAmtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amt."
+                android:fontFamily="@font/lemon_regular"
+                android:textSize="24sp"
+                android:layout_margin="10sp"
+                />
+
+            <TextView
+                android:id="@+id/totalAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Rs99"
+                android:fontFamily="@font/lemon_regular"
+                android:textSize="24sp"
+                android:layout_margin="10sp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkoutBtn"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Checkout"
+            android:layout_below="@id/totalAmtContainer"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">ly</string>
+    <string name="model">model</string>
+    <string name="nxt_btn">Next</string>
+    <string-array name="steps">
+        <item name="step1">Step1</item>
+        <item name="step2">Step2</item>
+        <item name="step3">Step3</item>
+    </string-array>
+
+    <string name="step1_msg">
+        Open the app and wait
+        While we getting phone info
+    </string>
+
+    <string name="step2_msg">
+      After getting info we
+showcase our available
+mobile skins
+    </string>
+
+    <string name="step3_msg">
+        Just select your favourate
+skins and we deliver at your
+doorstep
+    </string>
+
+    <string name="cart">cart</string>
+    <string name="search_hint">skins for %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutorial_preference_key">net.`in`.projecto.layer.TUTORIAL_KEY</string>
+    <string name="tutorial_show">%s</string>
+    <string name="step_3">Just select your favourate
+skins and we deliver at your
+home </string>
+
+    <string name="skin_des">
+We are using Premium Quality material to make our Mobile Skins.\n Layer Phone Skins gives your phone a premium look and protects your phone from scratches and dust as well.
+Top Features of Our Mobile Skins\n
+- Bubble Free Application \n
+- Zero Residue Removal \n
+- Smudge and Dust Resistance \n
+- Supports Wireless Charging \n
+- Precisely cut that makes button, speaker, microphone on your phone easily accessible. Edge to Edge and Cut to Cut we make every part visible.
+    </string>
+
+    <string name="mobile_model">%s</string>
+    <string name="confirmation_msg">Thank you for placing an order on %s we deliver your order within two days</string>
+    <string name="mobile_pref">%s</string>
+    <string name="verify_otp">Get verify your otp</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="otpSubtitle">Enter the OTP sent to %s</string>
+    <string name="placedDate">%s</string>
+    <string name="deliverDate">%s</string>
+    <string name="troubleshooting">Please wait while we fetch device information</string>
+    <string name="cod">** Only COD available **</string>
+    <string name="name_hint">Name show here</string>
+    <string name="price_hint">Price show here</string>
+</resources>

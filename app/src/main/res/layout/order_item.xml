@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon_regular"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/banner"
+            android:hint="your skin name"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/placedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon_regular"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/banner"
+            android:hint="delivery status"
+            android:layout_below="@id/title"
+            android:layout_margin="10dp"
+
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
